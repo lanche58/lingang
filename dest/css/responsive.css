@@ -1,0 +1,12 @@
+@media screen and (max-width: 1600px) { .container { min-height: 800px; } }
+@media screen and (max-width: 1366px) { .container { min-height: 600px; } }
+@media screen and (max-width: 1024px) { .vwrap .videobox { width: 700px; margin-left: -350px; }
+  .pw { width: 90%; }
+  .fixbg { background-attachment: scroll; }
+  .menu-handler { display: block; }
+  .mcv { display: block; } }
+@media screen and (max-width: 861px) { .vwrap .videobox { width: 100%; left: 0; margin-left: 0; } }
+@media screen and (max-width: 641px) { .vwrap .videobox { height: 350px; margin-top: -175px; } }
+@media screen and (max-width: 481px) { .vwrap .videobox { height: 300px; margin-top: -150px; }
+  .container { min-height: 400px; } }
+@media screen and (max-width: 321px) { .vwrap .videobox { height: 260px; margin-top: -130px; } }

@@ -31,7 +31,7 @@ a:link, a:visited {text-decoration: none; }
 a:active, a:hover {text-decoration: none; }
 .clearfix:before, .clearfix:after {display: table; content: ""; line-height: 0px; }
 .clearfix:after {clear: both; }
-.bl-cover{ position: absolute; z-index: 29; top: 0; bottom: 0; left: 0; right: 0; background: url(../images/black.png); }
+.bl-cover{ display: block; position: absolute; z-index: 29; top: 0; bottom: 0; left: 0; right: 0; background: url(../images/black.png); }
 .txx{overflow: hidden; }
 html.open{overflow: hidden; }
 .smo,
@@ -179,8 +179,8 @@ html.open{overflow: hidden; }
 
 /* winxin */
 .popUpblack{ background:url(../images/black.png) repeat; width: 100%; height: 100%; position: fixed; left: 0px; top: 0px; z-index: 1010; display: none;}
-.popUp { width: 220px; height: 242px; border: 5px solid #0093dd; background: #fff; position: fixed; left: 50%; top: 50%; margin: -87px 0 0 -115px; z-index: 1004; }
-.popUp .t { padding: 0 0 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; border-bottom: 1px solid #0093dd; background: #0093dd; }
+.popUp { width: 220px; height: 242px; border: 5px solid #014099; background: #fff; position: fixed; left: 50%; top: 50%; margin: -87px 0 0 -115px; z-index: 1004; }
+.popUp .t { padding: 0 0 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; border-bottom: 1px solid #014099; background: #014099; }
 .popUp .t .close { padding: 0 10px 0 0; float: right; cursor: pointer; color: #fff; font-weight: normal; }
 .popUp .img { padding: 20px; }
 .popUp .img img { width: 100%; height: 100%; display: block; }
@@ -442,3 +442,137 @@ html.open{overflow: hidden; }
 .active .am-delay-11 { -webkit-animation-delay: 1100ms; animation-delay: 1100ms; }
 .active .am-delay-12 { -webkit-animation-delay: 1200ms; animation-delay: 1200ms; }
 } /* 1153 */
+
+.u-slick-box { position: relative; overflow: hidden; }
+.u-slick-box > img { display: block; width: 100%; }
+.u-slick-box .u-slick { position: absolute; left: 0; right: 0; top: 0; }
+
+.u-slick { position: relative; overflow: hidden; }
+.u-slick .item { position: relative; overflow: hidden; }
+
+.scroll-down { position: relative; border-radius: 100%; width: 76px; height: 76px; background: #f08336; color: #fff; font-size: 12px; cursor: pointer; -webkit-transition: 300ms; transition: 300ms; }
+.scroll-down .en { padding-top: 26px; }
+.scroll-down .aico { position: absolute; left: 50%; top: 58px; margin-left: -6px; background-position: -180px 0px; width: 12px; height: 35px; -webkit-animation: hide-dt 3s infinite; animation: hide-dt 3s infinite; }
+.scroll-down:hover { background: #014099; }
+
+.logo { width: 141px; height: 47px; overflow: hidden; }
+
+.nav li { float: left; }
+.nav li + li { margin-left: 38px; }
+.nav li > a { display: block; position: relative; font-size: 16px; padding: 12px 0; }
+.nav li > a:before { content: ""; position: absolute; left: auto; right: 0; bottom: 0; width: 0; background: #f08336; -webkit-transition: 600ms; transition: 600ms; height: 3px; }
+.nav li > a:hover, .nav li > a.act { color: #f08336; }
+.nav li > a:hover:before, .nav li > a.act:before { left: 0; right: auto; width: 100%; }
+
+.menuBlack { position: fixed; z-index: 1009; display: none; }
+
+.f-cta a { float: left; overflow: hidden; line-height: 24px; }
+.f-cta a + a { margin-left: 85px; }
+.f-cta .aico { float: left; width: 24px; height: 24px; margin-right: 5px; }
+.f-cta .addr .aico { background-position: -156px 0px; }
+.f-cta .tel .aico { background-position: -132px 0px; }
+.f-cta .email .aico { background-position: -132px -48px; }
+
+.share { line-height: 24px; }
+.share p { float: left; }
+.share .ico { float: left; width: 24px; height: 24px; text-indent: -9999px; background-position: center top; margin-left: 10px; }
+
+.friendship-link { position: relative; width: 254px; }
+.friendship-link .s { position: relative; border: 1px solid #999; height: 34px; padding: 0 30px 0 15px; line-height: 34px; overflow: hidden; cursor: pointer; }
+.friendship-link .aico { display: block; position: absolute; right: 15px; top: 50%; margin-top: -3px; background-position: -156px -88px; width: 14px; height: 6px; -webkit-transition: 300ms; transition: 300ms; }
+.friendship-link .k { position: absolute; left: 0; right: 0; bottom: 100%; z-index: 99; background: #999; overflow: hidden; display: none; }
+.friendship-link .g { max-height: 300px; overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.friendship-link .nowti { display: block; margin: 0 15px; line-height: 30px; }
+.friendship-link.act .s { background: #999; }
+.friendship-link.act .aico { background-position: -156px -82px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+.f-ma { width: 98px; }
+
+.f-cop a { margin-left: 20px; }
+
+.fixctas { position: fixed; z-index: 899; right: 0; bottom: 50%; transform: translateY(50%); -webkit-transform: translateY(50%); -moz-transform: translateY(50%); -ms-transform: translateY(50%); bottom: 10% \9; }
+.fixctas a { display: block; position: relative; color: #fff; }
+.fixctas a:hover .b { opacity: 1; visibility: visible; -webkit-transform: none; transform: none; }
+.fixctas .aico { display: block; width: 66px; height: 66px; }
+.fixctas .tel { background-color: #f08336; }
+.fixctas .tel .aico { background-position: 0px 0px; }
+.fixctas .tel .b { background-color: #f08336; top: 0; }
+.fixctas .weixin { background-color: #014099; }
+.fixctas .weixin .aico { background-position: -66px 0px; }
+.fixctas .b { position: absolute; right: 100%; white-space: nowrap; -webkit-transform: translateX(-20px); transform: translateX(-20px); opacity: 0; visibility: hidden; -webkit-transition: 400ms; transition: 400ms; }
+
+.tel-num { font-size: 22px; line-height: 66px; padding: 0 30px 0 20px; }
+
+.ihn-a { display: block; color: #fff; padding: 45px 115px 0 55px; }
+.ihn-a .ti { margin-bottom: 50px; }
+.ihn-a .tx1 { font-size: 24px; margin-bottom: 10px; -webkit-transition: 300ms; transition: 300ms; }
+.ihn-a .ihn-date { margin-top: 70px; }
+
+.ihn-date { font-size: 12px; line-height: 1; }
+.ihn-date i { border-left: 1px solid #fff; border-color: rgba(255, 255, 255, 0.5); padding-left: 15px; margin-left: 15px; }
+
+.ihn-arrow { position: absolute; z-index: 99; }
+.ihn-arrow .slick-arrow { width: 24px; height: 24px; background: url(../images/aicos.png); }
+
+.banner-box { position: relative; }
+
+.banner .pic2 { position: absolute; top: 0; left: 0; }
+
+.mtop { height: 86px; }
+
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 1005; height: 86px; line-height: 24px; -webkit-transition: 400ms; transition: 400ms; }
+.header a { color: #fff; }
+.header .logo { float: left; margin-top: 39px; -webkit-transition: 400ms; transition: 400ms; }
+.header .logo .lg-1 { -webkit-transition: 400ms; transition: 400ms; }
+.header .nav { float: right; margin-top: 38px; -webkit-transition: 400ms; transition: 400ms; }
+
+.sheader { background: #fff; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+.sheader a { color: #333; }
+.sheader .logo { margin-top: 20px; }
+.sheader .logo .lg-1 { margin-top: -47px; }
+.sheader .nav { margin-top: 19px; }
+
+.menuBox { position: fixed; width: 300px; -webkit-box-sizing: border-box; box-sizing: border-box; top: 0; right: -300px; height: 100%; background: #f2f2f2; z-index: 1010; overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; display: none; }
+.menuBox a { color: #666; }
+
+.navMobile a { display: block; position: relative; line-height: 24px; }
+.navMobile p a { border-bottom: 1px solid #ccc; padding: 18px 25px; font-size: 18px; }
+.navMobile p a.act { background: #f08336; color: #fff; }
+.navMobile .mtnav { display: none; padding: 12px 35px; background: #fff; }
+.navMobile .mtnav a { padding: 12px 0; font-size: 16px; }
+
+.page-line { position: fixed; top: 0; bottom: 0; left: 0; z-index: 99; width: 6px; background: #014099; }
+
+.ix-pa { padding-left: 7.5%; padding-right: 7.5%; }
+
+.banner .bl-cover { background: rgba(0, 0, 0, 0.2); }
+.banner .txts { position: absolute; left: 0; right: 0; z-index: 59; top: 38%; color: #fff; }
+.banner .txts a { color: #fff; }
+.banner .ch { font-size: 55px; }
+.banner .en { font-size: 18px; line-height: 1.4; text-transform: capitalize; margin-top: 5px; }
+.banner .slick-dots { position: absolute; right: 7.5%; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); -moz-transform: translateY(-50%); }
+.banner .slick-dots li { display: block; position: relative; width: 38px; height: 5px; margin: 0; }
+.banner .slick-dots li + li { margin-top: 15px; }
+.banner .slick-dots li a { position: absolute; right: 0; top: 0; width: 14px; background: #fff; -webkit-transition: 600ms; transition: 600ms; }
+.banner .slick-dots li.slick-active a { width: 100%; }
+
+.banner-box .scroll-down { position: absolute; left: 7.5%; bottom: 40px; }
+
+.footer { background: #333; color: #fff; }
+.footer a { color: #fff; }
+.footer .friendship-link { float: left; margin-top: 31px; }
+.footer .f-ma { float: left; margin-left: 30px; }
+.footer .share { margin-top: 25px; }
+.footer .t { padding-top: 50px; padding-bottom: 45px; }
+.footer .b { padding-top: 23px; padding-bottom: 23px; border-top: 1px solid #4d4d4d; }
+
+.ix-hot-new { position: absolute; right: 7.5%; bottom: -100px; width: 670px; height: 310px; background: #014099; color: #fff; overflow: hidden; }
+.ix-hot-new .ihn-list { height: 100%; }
+
+@media screen and (min-width: 1153px) { .share .ico:hover { background-position: center bottom; }
+  .f-cta .addr:hover .aico { background-position: -156px -24px; }
+  .f-cta .tel:hover .aico { background-position: -132px -24px; }
+  .f-cta .email:hover .aico { background-position: -132px -72px; }
+  .footer a:hover { color: #f08336; }
+  .fixctas a:hover .aico { -webkit-animation: phoneRotate .5s 3; animation: phoneRotate .5s 3; }
+  .ihn-a:hover .tx1 { color: #f08336; } }
