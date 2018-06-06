@@ -809,14 +809,14 @@ html.open{overflow: hidden; }
 
 .news-list { margin-left: -50px; }
 .news-list li { width: 25%; float: left; margin-bottom: 50px; }
-.news-list .news-a { margin-left: 50px; }
+.news-list .par-a, .news-list .news-a { margin-left: 50px; }
 
 .pager a { width: 42px; height: 40px; margin: 0 5px; background: #fff; border: 1px solid #ccc; text-align: center; line-height: 40px; color: #666; font-size: 16px; }
 .pager a.act { background: #014099; border-color: #014099; color: #fff; }
 .pager .arrow { width: 70px; font-size: 14px; }
 
 .nw1 { padding: 65px 0 200px 0; }
-.nw1 .pjc-list, .nw1 .news-list { margin-bottom: 90px; }
+.nw1 .notice-list, .nw1 .par-list, .nw1 .pjc-list, .nw1 .news-list { margin-bottom: 90px; }
 
 .nd-box { background: #fff; padding: 0 70px 95px 70px; border: 1px solid #ccc; }
 .nd-box .bs { font-size: 12px; }
@@ -864,3 +864,180 @@ html.open{overflow: hidden; }
 
 .pbanner-box { position: relative; }
 .pbanner-box .pjc-intro-box { position: absolute; left: 50%; bottom: -60px; margin-left: -712px; z-index: 59; }
+
+.pjc-ti { font-size: 40px; color: #014099; }
+
+.pjc1 { padding: 125px 0 180px 0; }
+.pjc1 .pjc-cha-list { margin-top: 40px; }
+
+.pjc-cha-list li { float: left; width: 25%; }
+.pjc-cha-list .pa { padding: 0 50px; }
+.pjc-cha-list .ico { border-radius: 100%; width: 120px; height: 120px; background: #fff; margin: 0 auto; -webkit-transition: 300ms; transition: 300ms; }
+.pjc-cha-list .ti { font-size: 18px; color: #014099; margin-top: 25px; }
+.pjc-cha-list .tx { margin-top: 20px; }
+
+.pjc-img-list .pic { transform: scale(0.8); -ms-transform: scale(0.8); -webkit-transform: scale(0.8); -moz-transform: scale(0.8); -webkit-transition: 600ms; transition: 600ms; }
+.pjc-img-list .pic:after { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.7); -webkit-transition: 600ms; transition: 600ms; }
+.pjc-img-list .slick-center .pic { transform: none; -ms-transform: none; -webkit-transform: none; -moz-transform: none; }
+.pjc-img-list .slick-center .pic:after { opacity: 0; visibility: hidden; }
+.pjc-img-list.his-arrow .slick-prev { left: 24%; margin-left: -70px; }
+.pjc-img-list.his-arrow .slick-next { right: 24%; margin-right: -70px; }
+
+.pjc2 { padding: 95px 0 90px 0; }
+.pjc2 .u-slick-box { margin-top: 50px; }
+.pjc2 .freeTx { margin-top: 25px; font-size: 15px; }
+
+.pjc-name-box { position: absolute; z-index: 59; top: 0; bottom: 0; left: 0; right: 0; }
+
+.pjc-name { position: relative; margin: 0 auto; width: 130px; min-height: 226px; border: 3px solid #e3e9f3; color: #e3e9f3; overflow: hidden; }
+.pjc-name .en { position: absolute; left: 30px; bottom: 20px; }
+.pjc-name img { vertical-align: bottom; }
+.pjc-name .ch { width: 40px; font-size: 40px; line-height: 1.1; padding: 30px 0 20px 0; margin-left: 65px; }
+
+.pjc-nav { text-align: center; border-bottom: 1px solid #ccc; }
+.pjc-nav li { padding: 0 16px; }
+.pjc-nav a { display: block; padding: 18px 28px; color: #666; line-height: 24px; font-size: 16px; }
+.pjc-nav a.act { background: #014099; color: #fff; }
+
+.pjc3 { padding: 70px 0 75px 0; }
+.pjc3 .notice-list, .pjc3 .news-list { margin: 55px 0 25px 0; }
+
+.notice-list { margin-left: -35px; }
+.notice-list li { float: left; width: 50%; margin-bottom: 35px; }
+.notice-list .not-a { margin-left: 35px; }
+
+.not-date { background: #ccc; width: 80px; height: 110px; overflow: hidden; padding-left: 10px; color: #fff; -webkit-transition: 300ms; transition: 300ms; }
+.not-date .ti1 { font-size: 16px; margin-top: 6px; }
+.not-date .line { width: 14px; height: 2px; background: #fff; margin-top: 7px; }
+.not-date .d { line-height: 1; font-size: 26px; margin-top: 10px; }
+.not-date .y { line-height: 1; margin-top: 5px; }
+
+.not-a { display: block; background: #fff; border: 1px solid #ccc; height: 145px; padding: 35px 40px 0 40px; color: #666; overflow: hidden; }
+.not-a .not-date { float: left; margin-right: 45px; }
+.not-a .ti2 { color: #000; font-size: 20px; margin-bottom: 17px; }
+.not-a .tx { line-height: 26px; max-height: 52px; }
+
+.pjc4 { background: #84a9db; color: #fff; padding-top: 45px; }
+.pjc4 .pjc-ti { color: #fff; }
+.pjc4 .pjc-cta-list { margin-top: 55px; }
+.pjc4 #map { margin-top: 65px; }
+
+.pjc-cta-list li + li { margin-left: 120px; }
+.pjc-cta-list a { color: #fff; font-size: 15px; }
+.pjc-cta-list .ico { border-radius: 100%; width: 52px; height: 52px; margin: 0 auto 8px auto; background-color: #fff; background-position: center top; -webkit-transition: 300ms; transition: 300ms; }
+
+#map { height: 550px; }
+
+.par-a { display: block; background: #fff; color: #666; }
+.par-a .txts { height: 180px; padding: 0 20px; overflow: hidden; }
+.par-a .nowti { margin-top: 25px; font-size: 18px; color: #000; -webkit-transition: 300ms; transition: 300ms; }
+.par-a .tx { margin-top: 10px; line-height: 26px; height: 52px; }
+.par-a .date { margin-top: 23px; padding-top: 10px; font-size: 12px; border-top: 1px solid #ccc; }
+
+.pb-h { height: 55px; }
+
+.par-list { margin-left: -50px; }
+.par-list li { float: left; width: 33.33%; margin-bottom: 50px; }
+.par-list .study-a { margin-left: 50px; }
+
+.study-a { display: block; position: relative; color: #fff; }
+.study-a .txts { position: absolute; top: 0; bottom: 0; left: 0; right: 0; padding: 0 25px; overflow: hidden; -webkit-transition: 600ms; transition: 600ms; }
+.study-a .nowti { margin-top: 40px; font-size: 18px; -webkit-transition: 300ms; transition: 300ms; }
+.study-a .btn { position: absolute; left: 25px; bottom: 35px; display: block; width: 98px; height: 26px; background: #fff; text-align: center; color: #666; font-size: 12px; line-height: 26px; -webkit-transition: 300ms; transition: 300ms; }
+.study-a:after { content: ""; position: absolute; left: auto; right: 0; bottom: 0; width: 0; background: #f08336; -webkit-transition: 600ms; transition: 600ms; height: 4px; top: 0; }
+
+.sc-ti { height: 56px; overflow: hidden; background: #d3d3d3; line-height: 56px; }
+.sc-ti .more { float: right; margin-left: 30px; width: 124px; background: #ccc; text-align: center; font-size: 12px; color: #fff; }
+.sc-ti .nowti { padding-left: 30px; line-height: 56px; font-size: 16px; color: #000; }
+
+.sc-item .sc-ti { margin-bottom: 25px; }
+.sc-item + .sc-item { margin-top: 50px; }
+
+.sc-date { position: relative; width: 80px; padding-left: 10px; height: 70px; background: #f08336; color: #fff; overflow: hidden; }
+.sc-date span { line-height: 1; display: block; }
+.sc-date .y { margin-top: 45px; }
+.sc-date .y i { display: none; }
+.sc-date .d { position: absolute; left: 10px; top: 15px; font-size: 28px; }
+
+.sc-a { display: block; overflow: hidden; background: #fff; color: #666; }
+.sc-a .pic { float: left; width: 554px; }
+.sc-a .txts { position: relative; padding: 30px 35px 0 50px; overflow: hidden; }
+.sc-a .sc-date { position: absolute; top: 30px; right: 35px; }
+.sc-a .w { width: 370px; }
+.sc-a .tx1 { height: 56px; line-height: 28px; font-size: 18px; color: #000; -webkit-transition: 300ms; transition: 300ms; }
+.sc-a .tx2 { line-height: 26px; height: 52px; margin-top: 25px; -webkit-transition: 300ms; transition: 300ms; }
+.sc-a .more { margin-top: 55px; }
+
+.scs-box .pic { float: left; width: 554px; }
+.scs-box .scs-list { overflow: hidden; padding: 0 35px 0 50px; }
+
+.scs-list a { display: block; padding: 6px 0; color: #666; line-height: 24px; overflow: hidden; }
+.scs-list .date { float: right; width: 90px; text-align: right; }
+.scs-list .nowti { line-height: 24px; font-weight: bold; }
+
+.pb-h2 { height: 140px; }
+
+.hc-box .txts { float: left; width: 460px; padding-top: 40px; margin-right: 90px; }
+.hc-box .freeTx { font-size: 15px; margin-top: 60px; }
+
+.job1 { padding: 120px 0; }
+
+.ri-list { padding: 0 40px 0 160px; }
+.ri-list .t { overflow: hidden; }
+.ri-list .t > span { float: left; }
+.ri-list .r1 { width: 25%; }
+.ri-list .r2 { width: 20%; }
+.ri-list .r3 { width: 20%; }
+.ri-list .r4 { width: 22%; }
+.ri-list .r5 { width: 13%; }
+.ri-list .r1 .nowti { padding-left: 40px; }
+.ri-list .nowti { line-height: 62px; }
+.ri-list .f { background: #666; color: #fff; }
+.ri-list .f .nowti { line-height: 46px; }
+.ri-list a { display: block; border-bottom: 1px solid #f2f2f2; color: #333; }
+
+.job2 { padding: 100px 0 60px 0; }
+.job2 .ri-list { margin-top: 50px; }
+
+.jdbox { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: url(../images/black.png); z-index: 1020; background: rgba(0, 0, 0, 0.7); opacity: 0; visibility: hidden; transition: 600ms; -webkit-transition: 600ms; }
+
+.jdctt { width: 808px; height: 768px; background: #fff; position: absolute; top: 50%; left: 50%; margin-top: -384px; margin-left: -404px; transform: translateX(100px); -webkit-transform: translateX(100px); opacity: 0; visibility: hidden; transition: 600ms; -webkit-transition: 600ms; }
+
+.jdctt .pa { padding: 60px 70px 0 70px; }
+
+.jd-list { overflow: hidden; }
+
+.jd-list li { width: 33.33%; float: left; }
+
+.jd-list .tx1 { color: #999; }
+
+.jd-list .tx2 { font-size: 30px; color: #000; margin-top: 8px; }
+
+.jd-list .j1 { width: 47%; }
+
+.jd-list .j2 { width: 33%; }
+
+.jd-list .j3 { width: 20%; }
+
+.jd-tx .tx1 { border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+
+.jd-tx .freeTx { line-height: 2; margin-top: 30px; height: 420px; overflow: hidden; overflow-y: visible; }
+
+.jd-tx { margin-top: 52px; }
+
+.jd-cta { border-top: 1px solid #ccc; padding-top: 11px; margin-top: 20px; }
+
+.jd-cta a { color: #666; }
+
+.jd-cta a:hover { color: #f08336; text-decoration: underline; }
+
+.jdclose { width: 30px; height: 30px; position: absolute; top: 9px; right: 17px; z-index: 9; background: url(../images/jdclose.png) no-repeat left center; cursor: pointer; -webkit-transition: -webkit-transform 400ms; transition: -webkit-transform 400ms; transition: transform 400ms; transition: transform 400ms, -webkit-transform 400ms; -webkit-transition: transform 400ms; }
+
+.jdclose:hover { background-position: right center; transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+
+.jdbox.show { opacity: 1; visibility: visible; }
+
+.jdbox.show .jdctt { transform: translate(0); -webkit-transform: translate(0); opacity: 1; visibility: visible; }
+
+.cn-list { margin-left: -30px; }
+.cn-list li { float: left; width: 25%; }
