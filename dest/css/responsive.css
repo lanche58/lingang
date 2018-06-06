@@ -54,7 +54,10 @@
   .sc-a:hover { -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); }
   .sc-a:hover .tx1, .sc-a:hover .more { color: #f08336; }
   .scs-list a:hover { color: #f08336; }
-  .ri-list a:hover { background: #fff; } }
+  .ri-list a:hover { background: #fff; }
+  .cn-a:hover .nw-date { background: #014099; }
+  .cta-list a:hover { color: #f08336; }
+  .cf-btn:hover { background: #014099; } }
 @media screen and (max-width: 1600px) { .container { min-height: 800px; } }
 @media screen and (max-width: 1366px) { .container { min-height: 600px; } }
 @media screen and (max-width: 1024px) { .vwrap .videobox { width: 700px; margin-left: -350px; }

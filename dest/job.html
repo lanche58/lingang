@@ -34,7 +34,7 @@
         <li><a href="party.html">党群建设</a></li>
         <li><a href="job.html" class="act">人力资源</a></li>
         <li><a href="notice.html">公司公告</a></li>
-        <li><a href="notice.html">安全生产</a></li>
+        <li><a href="pro.html">安全生产</a></li>
         <li><a href="contact.html">联系我们</a></li>
     </ul>
 </div>
@@ -92,11 +92,11 @@
                 <a href="notice.html">中标公告</a>
             </div>
         </dd>
-        <dd><p><a href="notice.html">安全生产</a></p>
+        <dd><p><a href="pro.html">安全生产</a></p>
             <div class="mtnav">
-                <a href="notice.html">安全管理制度</a>
-                <a href="news.html">安全督查</a>
-                <a href="news.html">安全演练</a>
+                <a href="pro.html">安全管理制度</a>
+                <a href="pro1.html">安全督查</a>
+                <a href="pro1.html">安全演练</a>
             </div>
         </dd>
         <dd><p><a href="contact.html">联系我们</a></p>
@@ -243,7 +243,7 @@
         </div>
     </div>
     <!-- job2 -->
-    <div class="jb3">
+    <div class="job3" id="job3">
         <div class="pw">
             <div class="ab-ti">
                 <p class="ch">竞选通知</p>
@@ -251,7 +251,7 @@
                 <div class="line"></div>
             </div>
             <ul class="cn-list clearfix">
-                <li><a href="news-detail.html" class="cn-a">
+                <li><a href="news-detail.html" class="cn-a iac-line-hover">
                     <p class="nw-date">
                         <span class="d fwb">25</span>
                         <span class="y">2018.05</span>
@@ -261,11 +261,61 @@
                         <div class="tx">竞选通知关于对2016年年度报告事后审核意见的回复公告竞选通知关于对2016年...</div>
                         <div class="ipd-more fib"><span class="ib">READ MORE</span></div>
                     </div>
+                    <span class="iac-line line-1"></span>
+                    <span class="iac-line line-2"></span>
+                    <span class="iac-line line-3"></span>
+                    <span class="iac-line line-4"></span>
+                </a></li>
+                <li><a href="news-detail.html" class="cn-a iac-line-hover">
+                    <p class="nw-date">
+                        <span class="d fwb">25</span>
+                        <span class="y">2018.05</span>
+                    </p>
+                    <div class="txts">
+                        <p class="nowti">这里是标题这里是标题</p>
+                        <div class="tx">竞选通知关于对2016年年度报告事后审核意见的回复公告竞选通知关于对2016年...</div>
+                        <div class="ipd-more fib"><span class="ib">READ MORE</span></div>
+                    </div>
+                    <span class="iac-line line-1"></span>
+                    <span class="iac-line line-2"></span>
+                    <span class="iac-line line-3"></span>
+                    <span class="iac-line line-4"></span>
+                </a></li>
+                <li><a href="news-detail.html" class="cn-a iac-line-hover">
+                    <p class="nw-date">
+                        <span class="d fwb">25</span>
+                        <span class="y">2018.05</span>
+                    </p>
+                    <div class="txts">
+                        <p class="nowti">这里是标题这里是标题</p>
+                        <div class="tx">竞选通知关于对2016年年度报告事后审核意见的回复公告竞选通知关于对2016年...</div>
+                        <div class="ipd-more fib"><span class="ib">READ MORE</span></div>
+                    </div>
+                    <span class="iac-line line-1"></span>
+                    <span class="iac-line line-2"></span>
+                    <span class="iac-line line-3"></span>
+                    <span class="iac-line line-4"></span>
+                </a></li>
+                <li><a href="news-detail.html" class="cn-a iac-line-hover">
+                    <p class="nw-date">
+                        <span class="d fwb">25</span>
+                        <span class="y">2018.05</span>
+                    </p>
+                    <div class="txts">
+                        <p class="nowti">这里是标题这里是标题</p>
+                        <div class="tx">竞选通知关于对2016年年度报告事后审核意见的回复公告竞选通知关于对2016年...</div>
+                        <div class="ipd-more fib"><span class="ib">READ MORE</span></div>
+                    </div>
+                    <span class="iac-line line-1"></span>
+                    <span class="iac-line line-2"></span>
+                    <span class="iac-line line-3"></span>
+                    <span class="iac-line line-4"></span>
                 </a></li>
             </ul>
+            <a href="job1.html?#job" class="ab-more">查看更多</a>
         </div>
     </div>
-    <!-- jb3 -->
+    <!-- job3 -->
 </div>
 <!-- container -->
 <div class="footer">
@@ -356,6 +406,13 @@
             e.preventDefault();
             var $this = $(this);
             gotoJob($this, $this.attr('href'));
+        });
+        $('.pnav a').bind(_click, function(e) {
+            e.preventDefault();
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
         });
     })
 </script>
