@@ -134,7 +134,6 @@
 <!-- pbanner -->
 <div class="container pbg">
     <div class="cta1 clearfix" id="cta1">
-        <div id="map"></div>
         <div class="pw rel">
             <div class="ab-ti">
                 <p class="ch">联系方式</p>
@@ -147,6 +146,7 @@
                 <p>邮编：646000</p>
             </div>
         </div>
+        <div id="map"></div>
     </div>
     <!-- cta1 -->
     <div class="cta2 fixbg" style="background-image: url(img/cta_bg.jpg);" id="cta2">
@@ -245,6 +245,21 @@
             e.preventDefault();
             var hash = $(this).attr('href').split('#')[1];
             if(hash){
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.mtnav a').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                var w = $menuBox.width();
+                $('html').removeClass('open');
+                $menuBtn.removeClass('active').stop(false,false).animate({right:0});
+                $('.menuBlack').stop().fadeOut(600);
+                $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                    $(this).hide();
+                });
+                navItem = 0;
                 $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
             }
         });

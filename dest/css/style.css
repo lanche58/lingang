@@ -913,7 +913,7 @@ html.open{overflow: hidden; }
 .pjc-nav a.act { background: #014099; color: #fff; }
 
 .pjc3 { padding: 70px 0 75px 0; }
-.pjc3 .notice-list, .pjc3 .news-list { margin: 55px 0 25px 0; }
+.pjc3 .notice-list, .pjc3 .news-list { margin-top: 55px; margin-bottom: 25px; }
 
 .notice-list { margin-left: -35px; }
 .notice-list li { float: left; width: 50%; margin-bottom: 35px; }
@@ -1091,3 +1091,7 @@ html.open{overflow: hidden; }
 
 .cta2 { padding: 75px 0 165px 0; }
 .cta2 .cta-form { margin-top: 125px; }
+
+.nd-close { width: 75px; height: 75px; position: fixed; top: 0; right: 0; background: rgba(1, 64, 153, 0.7); z-index: 99; cursor: pointer; transition: 300ms; -webkit-transition: 300ms; }
+
+.nd-close .ico { width: 100%; height: 100%; background-image: url(../images/nd-close.png); }

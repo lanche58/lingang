@@ -136,9 +136,11 @@
         </ul>
     </div>
     <div class="pjc2" id="pj1">
-        <div class="pjc-ti ti tac">项目展示</div>
-        <div class="freeTx tac">
-            <p>项目位于龙马潭区鱼塘街道民心路东北侧，占地面积170亩，总投资约10.2亿元，总建筑面积约30万平方米。</p>
+        <div class="pw">
+            <div class="pjc-ti ti tac">项目展示</div>
+            <div class="freeTx tac">
+                <p>项目位于龙马潭区鱼塘街道民心路东北侧，占地面积170亩，总投资约10.2亿元，总建筑面积约30万平方米。</p>
+            </div>
         </div>
         <div class="u-slick-box">
             <img src="images/pjc_pos_img.png" id="ppj" alt="">
@@ -367,19 +369,26 @@
 <script src="js/page.js"></script>
 <script>
     function pjcBox(){
-        $('#ppj').css({width: w_width*0.52});
-        $('.pjc-img-list .item').css({width: w_width*0.52});
+        if(w_width>861){
+            $('#ppj').css({width: w_width*0.52});
+            $('.pjc-img-list .item').css({width: w_width*0.52});
+        }else{
+            $('#ppj').css({style: ''});
+            $('.pjc-img-list .item').css({width: 'auto'});
+        }
     };
     pjcBox();
     $(window).resize(function () {
         pjcBox();
     });
     $(function(){
-        var num = $('.pjc-img-list .item').size();
-        if(num<=3){
-            for(var i=0; i<=3-num; i++){
-                var $html = $('.pjc-img-list .item').eq(i).clone();
-                $('.pjc-img-list').append($html);
+        if(w_width>861){
+            var num = $('.pjc-img-list .item').size();
+            if(num<=3){
+                for(var i=0; i<=3-num; i++){
+                    var $html = $('.pjc-img-list .item').eq(i).clone();
+                    $('.pjc-img-list').append($html);
+                }
             }
         }
         $('.pjc-img-list').slick({
@@ -387,7 +396,17 @@
             slidesToScroll: 1,
             centerMode: true,
             centerPadding: '0',
-            variableWidth: true
+            variableWidth: true,
+            responsive: [{
+                    breakpoint: 862,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: false,
+                        variableWidth: false
+                    }
+                }
+            ]
         });
         $('.pjc-nav a').bind(_click, function(e) {
             e.preventDefault();

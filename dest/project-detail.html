@@ -247,19 +247,26 @@
 <script src="js/page.js"></script>
 <script>
     function pjcBox(){
-        $('#ppj').css({width: w_width*0.52});
-        $('.pjc-img-list .item').css({width: w_width*0.52});
+        if(w_width>861){
+            $('#ppj').css({width: w_width*0.52});
+            $('.pjc-img-list .item').css({width: w_width*0.52});
+        }else{
+            $('#ppj').css({style: ''});
+            $('.pjc-img-list .item').css({width: 'auto'});
+        }
     };
     pjcBox();
     $(window).resize(function () {
         pjcBox();
     });
     $(function(){
-        var num = $('.pjc-img-list .item').size();
-        if(num<=3){
-            for(var i=0; i<=3-num; i++){
-                var $html = $('.pjc-img-list .item').eq(i).clone();
-                $('.pjc-img-list').append($html);
+        if(w_width>861){
+            var num = $('.pjc-img-list .item').size();
+            if(num<=3){
+                for(var i=0; i<=3-num; i++){
+                    var $html = $('.pjc-img-list .item').eq(i).clone();
+                    $('.pjc-img-list').append($html);
+                }
             }
         }
         $('.pjc-img-list').slick({
@@ -267,11 +274,23 @@
             slidesToScroll: 1,
             centerMode: true,
             centerPadding: '0',
-            variableWidth: true
+            variableWidth: true,
+            responsive: [{
+                    breakpoint: 862,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: false,
+                        variableWidth: false
+                    }
+                }
+            ]
         });
-        $('.parallax').parallax({
-            speed: '100'
-        });
+        if(!isMobile){
+            $('.parallax').parallax({
+                speed: '100'
+            });
+        }
     })
 </script>
 </body>
