@@ -366,10 +366,29 @@
 <script>
     $(function(){
         var mh = 0;
-        $('.ab-his').slick({
-            slidesToShow: 3,
-            slidesToScroll: 3
-        });
+        function hisBox(){
+            var processC = $('.ab-his').hasClass('slick-slider');
+            if(w_width>861&&processC==false){
+                $('.ab-his').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    responsive: [{
+                            breakpoint: 1025,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2
+                            }
+                        }
+                    ]
+                });
+                abBox();
+            }else if(w_width<=861&&processC==true){
+                $('.ab-his').slick('unslick');
+            }else{
+                return;
+            }
+        };
+        hisBox();
         function abBox(){
             $('.his-c').each(function(i,e){
                 var h = $(this).height();
@@ -381,14 +400,28 @@
             $('.ab-his').css('height', mh);
             $('.ab-his .item').css('height', mh);
         };
-        abBox();
         $(window).resize(function () {
-            abBox();
+             hisBox();
         });
         $('.pnav a').bind(_click, function(e) {
-            e.preventDefault();
             var hash = $(this).attr('href').split('#')[1];
             if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.mtnav a').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                var w = $menuBox.width();
+                $('html').removeClass('open');
+                $menuBtn.removeClass('active').stop(false,false).animate({right:0});
+                $('.menuBlack').stop().fadeOut(600);
+                $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                    $(this).hide();
+                });
+                navItem = 0;
                 $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
             }
         });
