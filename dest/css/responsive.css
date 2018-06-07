@@ -284,6 +284,7 @@
   .jdctt .pa { padding: 50px 5% 100px 5%; }
   .jd-tx .freeTx { height: auto; overflow: hidden; }
   .jdbox .nd-close { display: block; }
+  .nd-close { display: block; }
   .jdclose { display: none; }
   .hc-box .pic { display: none; }
   .hc-box .txts { float: none; margin-right: 0; width: 100%; }
