@@ -94,8 +94,7 @@
   .header .nav { margin-top: 36px; }
   .sheader .nav { margin-top: 18px; }
   .ix-hot-new { width: 560px; height: 260px; }
-  .ihn-a .tx1 { font-size: 20px; }
-  .ihn-a { padding-left: 45px; }
+  .ihn-a { padding: 40px 45px 0 45px; }
   .ihn-a .ti { margin-bottom: 30px; }
   .ihn-a .ihn-date { margin-top: 50px; }
   .pbtxts .ch, .banner .ch { font-size: 42px; }
@@ -151,7 +150,9 @@
   .pbanner-box .pjc-intro-box { margin-left: -550px; }
   .pjc-img-list .pic { transform: scale(0.7); -ms-transform: scale(0.7); -webkit-transform: scale(0.7); -moz-transform: scale(0.7); }
   .pjc1 { padding-bottom: 140px; }
-  #map { height: 450px; } }
+  #map { height: 450px; }
+  .ihn-a .pic { width: 185px; }
+  .ihn-arrow .slick-arrow { bottom: 22px; } }
 @media screen and (max-width: 1281px) { .nav li + li { margin-left: 25px; }
   .nav li > a { font-size: 14px; }
   .f-cta a { display: block; float: none; }
@@ -299,7 +300,8 @@
   .pjc-intro { width: 100%; }
   .pjc-intro .pa { padding: 35px 5%; min-height: 0; }
   .pjc1 { padding: 90px 0 120px 0; }
-  .pjc3 .news-list li:nth-child(4) { display: none; } }
+  .pjc3 .news-list li:nth-child(4) { display: none; }
+  .nd-box .bs li:nth-child(2) { display: none; } }
 @media screen and (max-width: 861px) { .vwrap .videobox { width: 100%; left: 0; margin-left: 0; }
   .pbtxts .ch, .banner .ch { font-size: 36px; }
   .pbtxts .en { font-size: 26px; }
@@ -411,12 +413,10 @@
   .pbtxts .ch, .banner .ch { font-size: 20px; }
   .pbtxts .en { font-size: 16px; margin-top: 0; }
   .banner .en { font-size: 12px; }
-  .ihn-arrow .slick-arrow { -webkit-transform-origin: right bottom; transform-origin: right bottom; bottom: 32px; -webkit-transform: scale(0.7); transform: scale(0.7); }
+  .ihn-arrow .slick-arrow { -webkit-transform-origin: right bottom; transform-origin: right bottom; -webkit-transform: scale(0.7); transform: scale(0.7); }
   .ihn-arrow .slick-next { right: 12px; }
   .ihn-arrow .slick-prev { right: 42px; }
   .ihn-a { padding-right: 5%; }
-  .ihn-a .tx1 { font-size: 16px; }
-  .ihn-a .tx2 { font-size: 12px; }
   .ix-hot-new { height: 200px; }
   .ihn-a { padding-top: 25px; }
   .ihn-a .ihn-date { margin-top: 40px; }
@@ -484,7 +484,8 @@
   .pjc2 .u-slick-box { margin-top: 35px; }
   .pjc3 .notice-list, .pjc3 .news-list { margin-top: 35px; }
   .pjc-name { padding: 15px 30px; }
-  .jd-list .tx2 { font-size: 20px; } }
+  .jd-list .tx2 { font-size: 20px; }
+  .ihn-a .pic { display: none; } }
 @media screen and (max-width: 321px) { .vwrap .videobox { height: 260px; margin-top: -130px; }
   .search-box .slc { width: 190px; }
   .menuBox { width: 260px; }

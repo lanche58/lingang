@@ -541,15 +541,16 @@ html.open{overflow: hidden; }
 
 .tel-num { font-size: 22px; line-height: 66px; padding: 0 30px 0 20px; }
 
-.ihn-a { display: block; color: #fff; padding: 45px 115px 0 55px; }
+.ihn-a { display: block; color: #fff; padding: 45px 55px 0 55px; }
 .ihn-a .ti { margin-bottom: 50px; }
-.ihn-a .tx1 { font-size: 24px; margin-bottom: 10px; -webkit-transition: 300ms; transition: 300ms; }
+.ihn-a .tx1 { font-size: 18px; margin-bottom: 10px; -webkit-transition: 300ms; transition: 300ms; }
+.ihn-a .pic { float: left; width: 210px; margin-right: 25px; }
 .ihn-a .ihn-date { margin-top: 70px; }
 
 .ihn-date { font-size: 12px; line-height: 1; }
 .ihn-date i { border-left: 1px solid #fff; border-color: rgba(255, 255, 255, 0.5); padding-left: 15px; margin-left: 15px; }
 
-.ihn-arrow .slick-arrow { position: absolute; bottom: 42px; z-index: 99; width: 24px; height: 24px; background: url(../images/aicos.png) no-repeat 0px -66px; }
+.ihn-arrow .slick-arrow { position: absolute; bottom: 32px; z-index: 99; width: 24px; height: 24px; background: url(../images/aicos.png) no-repeat 0px -66px; }
 .ihn-arrow .slick-prev { right: 92px; }
 .ihn-arrow .slick-next { right: 42px; background-position: -24px -90px; }
 
@@ -832,8 +833,8 @@ html.open{overflow: hidden; }
 .nw1 .pager { margin-top: 90px; }
 
 .nd-box { background: #fff; padding: 0 70px 95px 70px; border: 1px solid #ccc; }
-.nd-box .bs { font-size: 12px; }
-.nd-box .bs i + i { margin-left: 20px; }
+.nd-box .bs { line-height: 24px; margin-top: 8px; }
+.nd-box .bs li + li { margin-left: 20px; }
 .nd-box .ti { font-size: 24px; color: #000; }
 .nd-box .t { height: 100px; padding-top: 55px; margin-bottom: 60px; border-bottom: 1px solid #ccc; }
 .nd-box .freeTx { padding-bottom: 155px; }
