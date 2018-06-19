@@ -481,6 +481,19 @@ html.open{overflow: hidden; }
 #slider_bg {position: absolute; left: 0; top: 0; height: 100%; background-color: #014099; z-index: 1; }
 #label {width: 50px; position: absolute; left: 0; top: 0; height: 42px; line-height: 42px; background: #014099 url('../images/bicos.png') no-repeat -104px -54px; z-index: 3; cursor: move; }
 #labelTip {position: absolute; top: 0; left: 65px; line-height: 42px; font-size: 12px; z-index: 2; }
+
+
+html.open{ overflow: hidden; }
+.ly-box{ position: fixed; top: 0; left: 0; right: 0; z-index: 1999; height: 100%; background: url('../images/black.png'); overflow: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; opacity: 0; visibility: hidden; -webkit-transition: 600ms; transition: 600ms; }
+.ly-main{ width: 972px; max-width: 100%; position: relative; margin-top: 75px; margin-left: auto; margin-right: auto; }
+.ly-box.show{ opacity: 1; visibility: visible; }
+.ly-ctt{ padding: 60px 60px 150px 60px; background: #fff; }
+.ly-ab-ti{ padding-bottom: 30px; margin-bottom: 40px; font-size: 24px; color: #333; border-bottom: 1px solid #ccc; }
+.ly-close{ z-index: 99; position: fixed; top: 0; right: 8%; width: 90px; height: 75px; background: url('../images/close2.png') no-repeat center center; cursor: pointer; -webkit-transition: 400ms; transition: 400ms; }
+.ly-prev, .ly-next{ z-index: 99; display: block; position: fixed; top: 50%; margin-top: -45px; width: 90px; height: 90px; background: #fff url('../images/ly_aw.png') no-repeat;  }
+.ly-prev{ left: 8%;  }
+.ly-next{ right: 8%; background-position: right bottom; }
+
 .u-slick-box { position: relative; overflow: hidden; }
 .u-slick-box > img { display: block; width: 100%; }
 .u-slick-box .u-slick { position: absolute; left: 0; right: 0; top: 0; }
@@ -541,18 +554,16 @@ html.open{overflow: hidden; }
 
 .tel-num { font-size: 22px; line-height: 66px; padding: 0 30px 0 20px; }
 
-.ihn-a { display: block; color: #fff; padding: 45px 55px 0 55px; }
-.ihn-a .ti { margin-bottom: 50px; }
-.ihn-a .tx1 { font-size: 18px; margin-bottom: 10px; -webkit-transition: 300ms; transition: 300ms; }
-.ihn-a .pic { float: left; width: 210px; margin-right: 25px; }
-.ihn-a .ihn-date { margin-top: 70px; }
+.ihn-a { display: block; position: relative; color: #fff; }
+.ihn-a .txts { position: absolute; left: 0; right: 0; bottom: 0; padding: 0 100px 0 30px; background: url("../images/black.png"); }
+.ihn-a .nowti { font-size: 16px; line-height: 66px; -webkit-transition: 300ms; transition: 300ms; }
 
 .ihn-date { font-size: 12px; line-height: 1; }
 .ihn-date i { border-left: 1px solid #fff; border-color: rgba(255, 255, 255, 0.5); padding-left: 15px; margin-left: 15px; }
 
-.ihn-arrow .slick-arrow { position: absolute; bottom: 32px; z-index: 99; width: 24px; height: 24px; background: url(../images/aicos.png) no-repeat 0px -66px; }
-.ihn-arrow .slick-prev { right: 92px; }
-.ihn-arrow .slick-next { right: 42px; background-position: -24px -90px; }
+.ihn-arrow .slick-arrow { position: absolute; bottom: 21px; z-index: 99; width: 24px; height: 24px; background: url(../images/aicos.png) no-repeat 0px -66px; }
+.ihn-arrow .slick-prev { right: 82px; }
+.ihn-arrow .slick-next { right: 32px; background-position: -24px -90px; }
 
 .ipd-ti { color: #014099; }
 .ipd-ti .ch { font-size: 48px; }
@@ -746,7 +757,7 @@ html.open{overflow: hidden; }
 .footer .t { padding-top: 50px; padding-bottom: 45px; }
 .footer .b { padding-top: 23px; padding-bottom: 23px; border-top: 1px solid #4d4d4d; }
 
-.ix-hot-new { position: absolute; right: 7.5%; bottom: -100px; width: 670px; height: 310px; background: #014099; color: #fff; overflow: hidden; }
+.ix-hot-new { position: absolute; right: 7.5%; bottom: -70px; width: 556px; height: 310px; background: #014099; color: #fff; overflow: hidden; }
 .ix-hot-new .ihn-list { height: 100%; }
 
 .ix1 { padding-top: 225px; padding-bottom: 175px; }
@@ -885,7 +896,7 @@ html.open{overflow: hidden; }
 .pjc1 .pjc-cha-list { margin-top: 40px; }
 
 .pjc-cha-list li { float: left; width: 25%; }
-.pjc-cha-list .pa { padding: 0 50px; }
+.pjc-cha-list .pa { display: block; color: #666; padding: 0 50px; }
 .pjc-cha-list .ico { border-radius: 100%; width: 120px; height: 120px; background: #fff; margin: 0 auto; -webkit-transition: 300ms; transition: 300ms; }
 .pjc-cha-list .ti { font-size: 18px; color: #014099; margin-top: 25px; }
 .pjc-cha-list .tx { margin-top: 20px; }
@@ -898,8 +909,9 @@ html.open{overflow: hidden; }
 .pjc-img-list.his-arrow .slick-next { right: 24%; margin-right: -70px; }
 
 .pjc2 { padding: 95px 0 90px 0; }
-.pjc2 .u-slick-box { margin-top: 50px; }
+.pjc2 .u-slick-box { margin-top: 140px; }
 .pjc2 .freeTx { margin-top: 25px; font-size: 15px; }
+.pjc2 .pjc-cha-list { margin-top: 100px; }
 
 .pjc-name-box { position: absolute; z-index: 59; top: 0; bottom: 0; left: 0; right: 0; }
 

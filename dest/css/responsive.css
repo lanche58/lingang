@@ -4,7 +4,7 @@
   .f-cta .email:hover .aico { background-position: -132px -72px; }
   .footer a:hover { color: #f08336; }
   .fixctas a:hover .aico { -webkit-animation: phoneRotate .5s 3; animation: phoneRotate .5s 3; }
-  .ihn-a:hover .tx1 { color: #f08336; }
+  .ihn-a:hover .nowti { color: #f08336; }
   .ihn-arrow .slick-prev:hover { background-position: -24px -66px; }
   .ihn-arrow .slick-next:hover { background-position: 0px -90px; }
   .ipd-more .ib:hover:before { left: 0; right: auto; width: 100%; width: 0; }
@@ -57,7 +57,10 @@
   .ri-list a:hover { background: #fff; }
   .cn-a:hover .nw-date { background: #014099; }
   .cta-list a:hover { color: #f08336; }
-  .cf-btn:hover { background: #014099; } }
+  .cf-btn:hover { background: #014099; }
+  .ly-prev:hover { background-color: #014099; background-position: right top; }
+  .ly-next:hover { background-color: #014099; background-position: left bottom; }
+  .ly-close:hover { -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
 @media screen and (max-width: 1600px) { .container { min-height: 800px; }
   .pbtxts .ch, .banner .ch { font-size: 50px; }
   .pbtxts .en { font-size: 36px; }
@@ -81,7 +84,9 @@
   .cta-form .cf-c { width: 595px; }
   .pbanner-box .pjc-intro-box { margin-left: -640px; }
   .pjc-cha-list .pa { padding: 0 30px; }
-  .pjc1 { padding-bottom: 160px; } }
+  .pjc1 { padding-bottom: 160px; }
+  .ly-next, .ly-close { right: 5%; }
+  .ly-prev { left: 5%; } }
 @media screen and (max-width: 1366px) { .container { min-height: 600px; }
   .ix-pa { padding-left: 80px; padding-right: 80px; }
   .banner .slick-dots { right: 80px; }
@@ -93,10 +98,9 @@
   .sheader .logo { margin-top: 15px; }
   .header .nav { margin-top: 36px; }
   .sheader .nav { margin-top: 18px; }
-  .ix-hot-new { width: 560px; height: 260px; }
-  .ihn-a { padding: 40px 45px 0 45px; }
-  .ihn-a .ti { margin-bottom: 30px; }
-  .ihn-a .ihn-date { margin-top: 50px; }
+  .ix-hot-new { width: 466px; height: 260px; }
+  .ihn-a .nowti { font-size: 14px; line-height: 56px; }
+  .ihn-arrow .slick-arrow { bottom: 16px; }
   .pbtxts .ch, .banner .ch { font-size: 42px; }
   .pbtxts .en { font-size: 32px; }
   .pi-ti, .pjc-ti, .ipd-ti .ch { font-size: 36px; }
@@ -151,8 +155,7 @@
   .pjc-img-list .pic { transform: scale(0.7); -ms-transform: scale(0.7); -webkit-transform: scale(0.7); -moz-transform: scale(0.7); }
   .pjc1 { padding-bottom: 140px; }
   #map { height: 450px; }
-  .ihn-a .pic { width: 185px; }
-  .ihn-arrow .slick-arrow { bottom: 22px; } }
+  .ly-main { width: 772px; } }
 @media screen and (max-width: 1281px) { .nav li + li { margin-left: 25px; }
   .nav li > a { font-size: 14px; }
   .f-cta a { display: block; float: none; }
@@ -195,7 +198,9 @@
   .pi-ti:before { height: 5px; } }
 @media screen and (max-width: 1153px) { .ipd-a .pic2 { margin-right: 70px; }
   .ip-arrow.ip-next { right: 90px; }
-  .pos-img-box .pic { margin-right: 70px; } }
+  .pos-img-box .pic { margin-right: 70px; }
+  .ly-next, .ly-close { right: 0; }
+  .ly-prev { left: 0; } }
 @media screen and (max-width: 1024px) { .vwrap .videobox { width: 700px; margin-left: -350px; }
   .pw { width: 90%; }
   .fixbg { background-attachment: scroll; }
@@ -207,18 +212,16 @@
   .header, .header .logo, .header .logo .lg-1 { -webkit-transition: none; transition: none; }
   .ix-pa { padding-left: 5%; padding-right: 5%; }
   .banner .slick-dots { right: 5%; }
-  .ix-hot-new { right: 5%; }
   .sheader .logo { margin-top: 7px; -webkit-transform-origin: left center; transform-origin: left center; -webkit-transform: scale(0.7); transform: scale(0.7); }
   .pbanner .picbox { position: relative; }
   .banner .pic2 { position: static; }
-  .ix-hot-new { position: relative; bottom: 0; right: 0; width: 100%; }
+  .ix-hot-new { position: relative; bottom: 0; right: 0; width: 100%; height: auto; }
   .banner .slick-dots { left: 0; right: 0; top: auto; bottom: 5%; transform: none; -webkit-transform: none; -ms-transform: none; -moz-transform: none; }
   .banner .slick-dots li + li { margin-top: 0; }
   .banner .slick-dots li { display: inline-block; border-radius: 100%; width: 10px; height: 10px; margin: 0 5px; background: #fff; }
   .banner .slick-dots li a { width: 100%; background: none; }
   .banner .slick-dots .slick-active { background: #f08336; }
   .banner .txts { top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
-  .ihn-a { padding-left: 5%; }
   .ipd-a .pic2 { margin-right: 0; }
   .ip-arrow.ip-next { right: 20px; }
   .pos-img-box .pic { margin-right: 0; }
@@ -301,7 +304,15 @@
   .pjc-intro .pa { padding: 35px 5%; min-height: 0; }
   .pjc1 { padding: 90px 0 120px 0; }
   .pjc3 .news-list li:nth-child(4) { display: none; }
-  .nd-box .bs li:nth-child(2) { display: none; } }
+  .nd-box .bs li:nth-child(2) { display: none; }
+  .ihn-a .txts { padding-left: 5%; }
+  .ly-tools { position: fixed; left: 0; right: 0; top: 0; height: 60px; z-index: 99; background: #fff; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  .ly-main { width: 100%; min-height: 100%; background: #fff; margin-top: 60px; }
+  .ly-close { right: 60px; width: 60px; height: 60px; background-color: #f08336; }
+  .ly-prev, .ly-next { top: 0; margin-top: 0; width: 60px; height: 60px; background-size: 120px; background-color: #014099; }
+  .ly-prev { left: auto; right: 120px; background-position: right top; }
+  .ly-next { background-position: left bottom; }
+  .ly-ctt { padding-left: 5%; padding-right: 5%; min-height: 100%; } }
 @media screen and (max-width: 861px) { .vwrap .videobox { width: 100%; left: 0; margin-left: 0; }
   .pbtxts .ch, .banner .ch { font-size: 36px; }
   .pbtxts .en { font-size: 26px; }
@@ -381,7 +392,9 @@
   .pjc-name .ch { width: 100%; margin-left: 0; padding: 0; }
   .pjc-name { display: inline-block; vertical-align: bottom; min-height: 0; width: auto; white-space: nowrap; padding: 20px 40px; }
   .pjc-name-box { text-align: center; }
-  .pjc2 { padding-top: 75px; } }
+  .pjc2 { padding-top: 75px; }
+  .pjc2 .pjc-cha-list { margin-top: 80px; }
+  .pjc2 .u-slick-box { margin-top: 100px; } }
 @media screen and (max-width: 641px) { .vwrap .videobox { height: 350px; margin-top: -175px; }
   .page-line { display: none; }
   .pjc-name .ch, .pbtxts .ch, .banner .ch { font-size: 28px; }
@@ -393,7 +406,9 @@
   .pjc-list li { width: 50%; }
   .par-list li { width: 100%; }
   .study-a .nowti { margin-top: 40px; font-size: 18px; }
-  .study-a .btn { bottom: 35px; } }
+  .study-a .btn { bottom: 35px; }
+  .pjc2 .pjc-cha-list { margin-top: 60px; }
+  .pjc2 .u-slick-box { margin-top: 80px; } }
 @media screen and (max-width: 601px) { .ix-news-img { display: none; }
   .ipy-a .ti { font-size: 20px; }
   .ipy-list li + li { margin-top: 20px; }
@@ -413,14 +428,9 @@
   .pbtxts .ch, .banner .ch { font-size: 20px; }
   .pbtxts .en { font-size: 16px; margin-top: 0; }
   .banner .en { font-size: 12px; }
-  .ihn-arrow .slick-arrow { -webkit-transform-origin: right bottom; transform-origin: right bottom; -webkit-transform: scale(0.7); transform: scale(0.7); }
+  .ihn-arrow .slick-arrow { -webkit-transform-origin: right center; transform-origin: right center; -webkit-transform: scale(0.7); transform: scale(0.7); }
   .ihn-arrow .slick-next { right: 12px; }
   .ihn-arrow .slick-prev { right: 42px; }
-  .ihn-a { padding-right: 5%; }
-  .ix-hot-new { height: 200px; }
-  .ihn-a { padding-top: 25px; }
-  .ihn-a .ihn-date { margin-top: 40px; }
-  .ihn-a .ti { font-size: 12px; margin-bottom: 25px; }
   .pjc2, .cta1 .ab-ti, .ab3 { padding-top: 50px; }
   .cta2, .pjc1, .pjc3, .nw1, .job1, .job2, .job3, .ab1, .ab4, .ab6, .ab5, .ab2, .ix1, .ix2, .ix3 { padding-top: 50px; padding-bottom: 55px; }
   .pi-ti, .pjc-ti, .ipd-ti .ch { font-size: 24px; }
@@ -485,7 +495,10 @@
   .pjc3 .notice-list, .pjc3 .news-list { margin-top: 35px; }
   .pjc-name { padding: 15px 30px; }
   .jd-list .tx2 { font-size: 20px; }
-  .ihn-a .pic { display: none; } }
+  .ihn-a .txts { padding-right: 70px; }
+  .ly-ctt { padding-top: 40px; padding-bottom: 80px; }
+  .ly-ab-ti { padding-bottom: 20px; margin-bottom: 30px; }
+  .pjc2 .pjc-cha-list { margin-top: 35px; } }
 @media screen and (max-width: 321px) { .vwrap .videobox { height: 260px; margin-top: -130px; }
   .search-box .slc { width: 190px; }
   .menuBox { width: 260px; }
